@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample app with rails 7 and postgresql 15.3, created via:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails new machine-setup-sample-app -c tailwind -j esbuild -T -d postgresql --skip-jbuilder
+bin/bundle add rspec-rails
+rails generate rspec:install
+```
